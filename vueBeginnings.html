@@ -1,0 +1,15 @@
+<html>
+	<head>
+		<title>myTitle</title>
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	</head>
+	<body>
+		<div id="app">
+			<h1>The weather is {{ weather }}</h1>
+			<label>Latitude: <input type="text" v-model="latitude" /></label><br/>
+			<label>Longitude: <input type="text" v-model="longitude" /></label><br/>
+			<button v-on:click="getWeather">Get</button>
+		</div>
+		<script src="vueBeginnings.js"></script>
+	</body>
+</html>
